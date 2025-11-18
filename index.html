@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Party Invitation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f6f7fb;
+    }
+    #envelope {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    #envelope:hover {
+      transform: scale(1.05);
+    }
+    #invitation {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 4px 16px #aaa;
+      border-radius: 12px;
+      max-width: 90vw;
+      max-height: 90vh;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <img id="envelope" src="envelope.png" alt="Mail Envelope" width="250">
+  <img id="invitation" src="invitation.jpg" alt="Invitation Card">
+  <script>
+    const envelope = document.getElementById('envelope');
+    const invitation = document.getElementById('invitation');
+    envelope.onclick = function () {
+      invitation.style.display = 'block';
+      envelope.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
