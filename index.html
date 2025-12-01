@@ -20,7 +20,7 @@
     #envelope:hover {
       transform: scale(1.05);
     }
-    #invitationn {
+    #tree {
       display: none;
       position: absolute;
       top: 50%;
@@ -36,17 +36,18 @@
 </head>
 <body>
   <img id="envelope" src="envelope.png" alt="Mail Envelope" width="250">
-  <img id="invitationn" src="invitationn.jpg" alt="Invitation Card">
+  <img id="tree" src="tree.jpg" alt="tree Card">
   <script>
     const envelope = document.getElementById('envelope');
-    const invitationn = document.getElementById('invitationn');
+    const tree = document.getElementById('tree');
     envelope.onclick = function () {
-      invitationn.style.display = 'block';
+      tree.style.display = 'block';
       envelope.style.display = 'none';
     }
   </script>
 </body>
 
 </html>
+
 
 
